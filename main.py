@@ -3,6 +3,7 @@ from Ship import *
 from Asteroid import *
 from pygame import mixer 
 
+
 pygame.init()
 screen_info = pygame.display.Info()
 print(screen_info)
