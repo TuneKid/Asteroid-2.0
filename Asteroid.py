@@ -4,10 +4,10 @@ class Asteroid(p.sprite.Sprite):
   def __init__(self):
     super().__init__()
     self.image = p.image.load('Zoom.jpeg')
-    self.image = p.transform.smoothscale(self.image, (100,150))
+    self.image = p.transform.smoothscale(self.image, (50,100))
     self.rect = self.image.get_rect()
     self.rect.center = (random.randint(0, 800), random.randint(0, 600))
-    self.speed = p.math.Vector2(0,10)
+    self.speed = p.math.Vector2(0,3)
     self.speed.rotate_ip(random.randint(0, 360))
 
   def update(self):
